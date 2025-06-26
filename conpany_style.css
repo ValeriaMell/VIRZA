@@ -1,0 +1,481 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4F4F8;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 73px; 
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  height: 150px;
+}
+
+header a.logo-link,
+header a.avatar-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Логотип */
+header a.logo-link img {
+  width: 54px;
+  height: 89px;
+  margin-right: 146px; 
+  display: block;
+}
+
+/* Меню */
+.menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; 
+}
+
+.menu a,
+.menu .dropdown {
+  margin-right: 59px;
+}
+
+.menu a:last-child {
+  margin-right: 0;
+}
+
+a {
+  color: #251605;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #73C3D1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #F4F4F8;
+  color: #251605;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: #F4F4F8;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown_content a {
+  color: #251605;
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown_content a:hover {
+  color: #73C3D1;
+}
+
+.dropdown:hover .dropdown_content,
+.dropdown:hover .dropdown_content_footer {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #73C3D1;
+}
+
+/* Аватар */
+header a.avatar-link img {
+  width: 61px;
+  height: 63px;
+  display: block;
+  margin-left: auto;
+}
+
+.avatar-menu {
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+}
+
+.avatar-menu img {
+  width: 61px;
+  height: 63px;
+  cursor: pointer;
+  display: block;
+}
+
+.avatar-dropdown {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100%; 
+  background-color: #F4F4F8;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 10;
+  border-radius: 4px;
+  min-width: 160px;
+}
+
+.avatar-dropdown a {
+  display: block;
+  padding: 12px 16px;
+  color: #251605;
+  text-decoration: none;
+}
+
+.avatar-dropdown a:hover {
+  color: #73C3D1;
+}
+
+/* Показывать при наведении */
+.avatar-menu:hover .avatar-dropdown {
+  display: block;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 73px; 
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  height: 150px;
+  background-color: #E6E6EA;
+}
+
+footer a.logo-link,
+footer a.avatar-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Логотип в футере */
+footer a.logo-link img {
+  width: 54px;
+  height: 89px;
+  margin-right: 146px; 
+  display: block;
+}
+
+/* Выпадающее меню в футере */
+.dropdown_content_footer {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  min-width: 160px;
+  background-color: #F4F4F8;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown_content_footer a {
+  color: #251605;
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown_content_footer a:hover {
+  color: #73C3D1;
+}
+
+/* Социальные сети */
+.social_networks a {
+  padding-left: 35px;
+}
+
+/* Описание компании */
+.company_description {
+  background-color: #E6E6EA;
+  height: 630px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 61px;
+}
+
+.text_description {
+  margin-left: 73px;
+}
+
+.text_description h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #251605;
+  margin-top: 82px;
+  margin-bottom: 74px;
+}
+
+.text_description p {
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #251605;
+  width: 637px;
+}
+
+/* Блок добродетелей */
+.block_virtues {
+  width: 368px;
+  height: 530px;
+  background-color: #E6E6EA;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block_virtues h3 {
+  color: #251605;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  margin-top: 22px;
+}
+
+.block_virtues p {
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #251605;
+  width: 300px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.our_virtues {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 61px;
+  margin-bottom: 61px;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #251605;
+  text-align: center;
+}
+
+/* Вакансии */
+.all_vacancy {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 35px;
+  margin-bottom: 61px;
+}
+
+.city {
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 30px;
+  cursor: pointer;
+  background-color: #E6E6EA;
+  width: 1148px;
+}
+
+.city-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #251605;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.arrow {
+  background-color: #fff;
+  color: #F78222;
+  border-radius: 50%;
+  width: 76px;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.vacancies {
+  display: none;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.vacancy {
+  border-top: 2px solid #F4F4F8;
+  padding: 10px 0;
+}
+
+.vacancy h4 {
+  margin: 0 0 5px;
+  font-size: 20px;
+  color: #251605;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+.vacancy p {
+  margin: 2px 0;
+  font-size: 16px;
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  color: #251605;
+}
+
+/* Форма */
+.form-wrapper {
+  background-color: #251605;
+  padding: 30px;
+  width: 587px;
+  height: 750px;
+  font-family: "Varela", sans-serif;
+}
+
+.form-wrapper h2 {
+  color: #E6E6EA;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 41px;
+  text-align: center;
+}
+
+.form-wrapper input[type="text"],
+.form-wrapper input[type="email"],
+.form-wrapper input[type="tel"],
+.form-wrapper select {
+  width: 500px;
+  padding: 15px;
+  font-size: 16px;
+  font-family: "Varela", sans-serif;
+  color: #251605;
+  background-color: #E6E6EA;
+  border: none;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.form-wrapper select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23251605' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.resume-upload {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.resume-upload input[type="file"] {
+  display: none;
+}
+
+.file-label {
+  background-color: #E6E6EA;
+  color: #251605;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  border-radius: 4px;
+  white-space: nowrap;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.file-label:hover {
+  background-color: #ddd;
+}
+
+.file-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #ffffff; /* Белый цвет */
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Кнопка отправки */
+.form-wrapper button {
+  width: 500px;
+  padding: 12px;
+  background-color: #E6E6EA;
+  color: #251605;
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 40px;
+}
+
+.form-wrapper button:hover {
+  background-color: white;
+}
+
+/* Плейсхолдеры и некорректные значения */
+.form-wrapper input::placeholder,
+.form-wrapper textarea::placeholder,
+.form-wrapper select:invalid {
+  color: #251605;
+}
+
+.form_vacancy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 123px;
+}
+
+.error-message {
+  color: #da0400;
+  text-align: center;
+  font-size: 14px;
+  min-height: 18px; /* Чтобы высота ошибки не менялась и форма не прыгала */
+  margin-bottom: 10px;
+  margin-top: 10px;
+}

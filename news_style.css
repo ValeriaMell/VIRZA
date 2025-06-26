@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #F4F4F8;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 73px; 
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  height: 150px;
+}
+
+header a.logo-link,
+header a.avatar-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* логотип */
+header a.logo-link img {
+  width: 54px;
+  height: 89px;
+  margin-right: 146px; 
+  display: block;
+}
+
+/* меню */
+.menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; 
+}
+
+.menu a,
+.menu .dropdown {
+  margin-right: 59px;
+}
+
+.menu a:last-child {
+  margin-right: 0;
+}
+
+a {
+  color: #251605;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #73C3D1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #F4F4F8;
+  color: #251605;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: #F4F4F8;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown_content a {
+  color: #251605;
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown_content a:hover {
+  color: #73C3D1;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #73C3D1;
+}
+
+/* Аватар */
+header a.avatar-link img {
+  width: 61px;
+  height: 63px;
+  display: block;
+  margin-left: auto;
+}
+.avatar-menu {
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+}
+
+.avatar-menu img {
+  width: 61px;
+  height: 63px;
+  cursor: pointer;
+  display: block;
+}
+
+.avatar-dropdown {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100%; 
+  background-color: #F4F4F8;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 10;
+  border-radius: 4px;
+  min-width: 160px;
+}
+.avatar-dropdown a {
+  display: block;
+  padding: 12px 16px;
+  color: #251605;
+  text-decoration: none;
+}
+
+.avatar-dropdown a:hover {
+  color: #73C3D1;
+}
+
+/* Показывать при наведении */
+.avatar-menu:hover .avatar-dropdown {
+  display: block;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 73px; 
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  height: 150px;
+  background-color: #E6E6EA;
+  margin-top: 30px;
+}
+
+footer a.logo-link,
+footer a.avatar-link {
+  display: inline-block;
+  text-decoration: none;
+  background: none;
+}
+
+/* логотип */
+footer a.logo-link img {
+  width: 54px;
+  height: 89px;
+  margin-right: 146px; 
+  display: block;
+}
+
+/* меню */
+.menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; 
+  background: none;
+}
+.logo-link img{
+    background: none;
+}
+.menu a,
+.menu .dropdown {
+  margin-right: 59px;
+  background: none;
+}
+
+.menu a:last-child {
+  margin-right: 0;
+}
+
+a {
+  color: #251605;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #73C3D1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #F4F4F8;
+  color: #251605;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.dropdown_content_footer {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  min-width: 160px;
+  background-color: #F4F4F8;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown_content_footer a {
+  color: #251605;
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown_content_footer a:hover {
+  color: #73C3D1;
+}
+
+.dropdown:hover .dropdown_content_footer {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #73C3D1;
+}
+.social_networks{
+    background: none;
+}
+
+.social_networks a{
+    background: none;
+    padding-left: 35px;
+}
+.social_networks img {
+    background: none;
+}
+
+h3{
+  font-size: 48px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  color: #251605;
+  display: flex;
+  justify-content: center;
+}
+.announcements{
+  margin-top: 10px;
+}
+
+.all_news{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 66px;
+}
+
+.news{
+  background-color: #E6E6EA;
+  width: 1178px;
+  height: 200px;
+  border-radius: 5px;
+  margin-bottom: 53px;
+
+}
+.news_box{
+  display: flex;
+  justify-content: space-around;
+}
+
+.text_news h4{
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #251605;
+  margin-top: 21px;
+}
+.text_news{
+  margin-left: 34px;
+  width: 780px;
+}
+.text_news p{
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 26px;
+  color: #251605;
+}
