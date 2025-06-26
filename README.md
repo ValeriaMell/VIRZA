@@ -32,7 +32,7 @@ define('DB_PASS', 'root');
 1. Запустить веб-сервер и MySQL через:
         OpenServer: "Запуск" - модули Apache+MySQL
         XAMPP: Start для Apache и MySQL
-2. Открыть в браузере: http://localhost/virza
+2. Открыть в браузере: http://localhost/gamecompanyVirza
 
 ## Техническая поддержка
 При ошибках подключения к БД:
